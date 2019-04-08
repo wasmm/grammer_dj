@@ -1,0 +1,624 @@
+[2019-03-19 13:40:46,096: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2019-03-19 13:40:46,101: DEBUG/MainProcess] | Worker: Building graph...
+[2019-03-19 13:40:46,106: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2019-03-19 13:40:46,193: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2019-03-19 13:40:46,198: DEBUG/MainProcess] | Consumer: Building graph...
+[2019-03-19 13:40:46,364: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Gossip, Heart, Tasks, Control, event loop}
+[2019-03-19 13:40:46,448: DEBUG/MainProcess] | Worker: Starting Hub
+[2019-03-19 13:40:46,448: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:46,448: DEBUG/MainProcess] | Worker: Starting Pool
+[2019-03-19 13:40:46,568: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:46,568: DEBUG/MainProcess] | Worker: Starting Consumer
+[2019-03-19 13:40:46,569: DEBUG/MainProcess] | Consumer: Starting Connection
+[2019-03-19 13:40:46,652: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2019-03-19 13:40:46,652: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:46,652: DEBUG/MainProcess] | Consumer: Starting Events
+[2019-03-19 13:40:46,735: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:46,735: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2019-03-19 13:40:46,735: INFO/MainProcess] mingle: searching for neighbors
+[2019-03-19 13:40:47,943: INFO/MainProcess] mingle: sync with 4 nodes
+[2019-03-19 13:40:47,945: DEBUG/MainProcess] mingle: processing reply from celery1@eva01
+[2019-03-19 13:40:47,945: DEBUG/MainProcess] mingle: processing reply from celery@worker.svc_add_follower
+[2019-03-19 13:40:47,945: DEBUG/MainProcess] mingle: processing reply from celery3@eva01
+[2019-03-19 13:40:47,945: DEBUG/MainProcess] mingle: processing reply from celery2@eva01
+[2019-03-19 13:40:47,946: INFO/MainProcess] mingle: sync complete
+[2019-03-19 13:40:47,946: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:47,946: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2019-03-19 13:40:47,950: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:47,950: DEBUG/MainProcess] | Consumer: Starting Heart
+[2019-03-19 13:40:47,956: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:47,956: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2019-03-19 13:40:47,967: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:47,967: DEBUG/MainProcess] | Consumer: Starting Control
+[2019-03-19 13:40:47,970: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:40:47,970: DEBUG/MainProcess] | Consumer: Starting event loop
+[2019-03-19 13:40:47,971: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2019-03-19 13:40:47,972: WARNING/MainProcess] /home/adminko/GRAMMER/venv/lib/python3.6/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-03-19 13:40:47,972: INFO/MainProcess] celery4@eva01 ready.
+[2019-03-19 13:40:47,973: DEBUG/MainProcess] basic.qos: prefetch_count->4
+[2019-03-19 13:40:48,216: DEBUG/MainProcess] celery@worker.svc_add_follower joined the party
+[2019-03-19 13:40:48,935: DEBUG/MainProcess] celery2@eva01 joined the party
+[2019-03-19 13:40:49,777: DEBUG/MainProcess] celery1@eva01 joined the party
+[2019-03-19 13:40:49,785: DEBUG/MainProcess] celery5@eva01 joined the party
+[2019-03-19 13:40:49,937: DEBUG/MainProcess] celery3@eva01 joined the party
+[2019-03-19 13:40:51,906: DEBUG/MainProcess] pidbox received method heartbeat() [reply_to:None ticket:None]
+[2019-03-19 13:40:51,907: DEBUG/MainProcess] Heartbeat requested by remote.
+[2019-03-19 13:40:51,938: DEBUG/MainProcess] pidbox received method stats() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'cdebccce-6e75-3884-8c29-bd9e75f02382'} ticket:65ac0508-cda2-4674-804e-a091f216a195]
+[2019-03-19 13:40:52,098: DEBUG/MainProcess] pidbox received method active_queues() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'aa1257a0-de30-3cd4-b1af-0535fe301041'} ticket:836506b5-45ab-4a16-80b0-3246f6d6aa7e]
+[2019-03-19 13:40:52,120: DEBUG/MainProcess] pidbox received method scheduled() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '5b7ad659-500e-3245-9dfe-81fd2b17f1d6'} ticket:02b17155-3921-4a0d-b5e0-cc8657fa9b2c]
+[2019-03-19 13:40:52,144: DEBUG/MainProcess] pidbox received method registered(taskinfoitems=[]) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '2e96f2f3-40c2-3d3d-ac56-7201edae9e61'} ticket:7e289e33-31cc-4c14-ba7a-265aea4cd085]
+[2019-03-19 13:40:53,121: DEBUG/MainProcess] pidbox received method active() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'cdebccce-6e75-3884-8c29-bd9e75f02382'} ticket:094582ff-a024-4f75-ac9b-462d8ea3657d]
+[2019-03-19 13:40:53,170: DEBUG/MainProcess] pidbox received method conf(with_defaults=False) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'aa1257a0-de30-3cd4-b1af-0535fe301041'} ticket:36aea95c-7ef2-42bf-97b9-bc18c592cffc]
+[2019-03-19 13:40:53,677: DEBUG/MainProcess] pidbox received method revoked() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '2e96f2f3-40c2-3d3d-ac56-7201edae9e61'} ticket:d6f72cbf-83e7-4a90-b996-82097721e13e]
+[2019-03-19 13:40:53,686: DEBUG/MainProcess] pidbox received method reserved() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '5b7ad659-500e-3245-9dfe-81fd2b17f1d6'} ticket:07a0082f-3d3f-47c3-bf60-3c38b74e27a6]
+[2019-03-19 13:40:56,732: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:40:56,732: INFO/MainProcess] Events of group {task} enabled by remote.
+[2019-03-19 13:41:01,734: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:06,733: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:11,730: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:16,729: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:21,732: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:26,734: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:29,356: DEBUG/MainProcess] celery@worker.svc_add_follower left
+[2019-03-19 13:41:31,732: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:36,733: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:47,541: DEBUG/MainProcess] pidbox received method heartbeat() [reply_to:None ticket:None]
+[2019-03-19 13:41:47,541: DEBUG/MainProcess] Heartbeat requested by remote.
+[2019-03-19 13:41:47,571: DEBUG/MainProcess] pidbox received method active_queues() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c706264f-f44a-365f-8e00-aade0e567d3b'} ticket:92e233b5-7c2d-4be6-bf73-14492a61a4d2]
+[2019-03-19 13:41:47,646: DEBUG/MainProcess] pidbox received method stats() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '3d7d85c9-e85e-347c-bc6a-7fb3b3319e3e'} ticket:1f6e544d-6b78-4856-a1c8-831cde9b455d]
+[2019-03-19 13:41:47,668: DEBUG/MainProcess] pidbox received method registered(taskinfoitems=[]) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '16eead05-4b98-382c-84a9-0e7291fc307b'} ticket:88064479-39cd-4253-b81e-04d74870e53e]
+[2019-03-19 13:41:47,690: DEBUG/MainProcess] pidbox received method scheduled() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'fb34bfa0-4d85-384f-b57a-da355fd2ae71'} ticket:5a350f7b-6c5a-4933-a87f-2d3b0b90eaa2]
+[2019-03-19 13:41:48,692: DEBUG/MainProcess] pidbox received method active() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c706264f-f44a-365f-8e00-aade0e567d3b'} ticket:7ee6f06b-eac6-421e-8bc6-da55197f2439]
+[2019-03-19 13:41:48,719: DEBUG/MainProcess] pidbox received method reserved() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '3d7d85c9-e85e-347c-bc6a-7fb3b3319e3e'} ticket:76ad65bb-e155-4d09-8468-0a0b769f9a58]
+[2019-03-19 13:41:48,731: DEBUG/MainProcess] pidbox received method revoked() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '16eead05-4b98-382c-84a9-0e7291fc307b'} ticket:7d7b458f-f188-4f35-96c4-4641810cf04f]
+[2019-03-19 13:41:48,786: DEBUG/MainProcess] pidbox received method conf(with_defaults=False) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'fb34bfa0-4d85-384f-b57a-da355fd2ae71'} ticket:c0e2b633-8e43-49f1-809c-30e3cf05e769]
+[2019-03-19 13:41:52,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:41:57,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:02,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:07,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:12,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:17,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:22,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:27,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:32,315: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:37,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:42,321: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:47,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:52,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:42:57,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:02,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:07,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:12,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:13,885: INFO/MainProcess] Received task: main.tasks.scaner_acts_like[137e5881-8355-4f79-9904-91de76c855af]  
+[2019-03-19 13:43:13,888: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x7fcb30264048> (args:('main.tasks.scaner_acts_like', '137e5881-8355-4f79-9904-91de76c855af', {'lang': 'py', 'task': 'main.tasks.scaner_acts_like', 'id': '137e5881-8355-4f79-9904-91de76c855af', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '137e5881-8355-4f79-9904-91de76c855af', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen15153@eva01', 'reply_to': 'b6468461-6b4f-313b-8442-bcdbac0cf772', 'correlation_id': '137e5881-8355-4f79-9904-91de76c855af', 'delivery_info': {'exchange': '', 'routing_key': 'like_action', 'priority': 0, 'redelivered': None}}, b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2019-03-19 13:43:13,908: DEBUG/MainProcess] Task accepted: main.tasks.scaner_acts_like[137e5881-8355-4f79-9904-91de76c855af] pid:15105
+[2019-03-19 13:43:17,315: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:22,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:27,319: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:32,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:37,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:42,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:47,321: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:52,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:43:57,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:02,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:07,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:12,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:17,320: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:22,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:27,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:32,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:37,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:42,315: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:47,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:52,322: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:44:57,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:02,317: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:07,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:08,911: INFO/MainProcess] Received task: main.tasks.scaner_acts_add_follow[833368da-4dc3-42a4-a09a-f9a0d18d2679]  
+[2019-03-19 13:45:08,913: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x7fcb30264048> (args:('main.tasks.scaner_acts_add_follow', '833368da-4dc3-42a4-a09a-f9a0d18d2679', {'lang': 'py', 'task': 'main.tasks.scaner_acts_add_follow', 'id': '833368da-4dc3-42a4-a09a-f9a0d18d2679', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '833368da-4dc3-42a4-a09a-f9a0d18d2679', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen15153@eva01', 'reply_to': 'b6468461-6b4f-313b-8442-bcdbac0cf772', 'correlation_id': '833368da-4dc3-42a4-a09a-f9a0d18d2679', 'delivery_info': {'exchange': '', 'routing_key': 'flw_add', 'priority': 0, 'redelivered': None}}, b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2019-03-19 13:45:08,924: DEBUG/MainProcess] Task accepted: main.tasks.scaner_acts_add_follow[833368da-4dc3-42a4-a09a-f9a0d18d2679] pid:15105
+[2019-03-19 13:45:12,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:17,318: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:22,321: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:27,317: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:32,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:37,320: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:42,317: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:47,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:52,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:45:57,317: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:02,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:07,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:12,319: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:17,315: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:22,317: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:27,312: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:32,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:37,312: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:42,314: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:47,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:52,316: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:46:57,313: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:47:02,315: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:47:07,315: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:47:09,934: DEBUG/MainProcess] | Worker: Closing Hub...
+[2019-03-19 13:47:09,934: DEBUG/MainProcess] | Worker: Closing Pool...
+[2019-03-19 13:47:09,935: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2019-03-19 13:47:09,935: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2019-03-19 13:47:09,935: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2019-03-19 13:47:09,935: DEBUG/MainProcess] | Consumer: Closing Events...
+[2019-03-19 13:47:09,935: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2019-03-19 13:47:09,935: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2019-03-19 13:47:09,936: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2019-03-19 13:47:09,936: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2019-03-19 13:47:09,936: DEBUG/MainProcess] | Consumer: Closing Control...
+[2019-03-19 13:47:09,936: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2019-03-19 13:47:09,936: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2019-03-19 13:47:09,936: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2019-03-19 13:47:09,956: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2019-03-19 13:47:09,957: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 13:47:09,957: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2019-03-19 13:47:09,973: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2019-03-19 13:47:09,991: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2019-03-19 13:47:09,991: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2019-03-19 13:47:09,991: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2019-03-19 13:47:09,991: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2019-03-19 13:47:11,026: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2019-03-19 13:47:11,026: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2019-03-19 13:47:11,027: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2019-03-19 13:47:11,027: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 13:47:11,027: DEBUG/MainProcess] Closing consumer channel...
+[2019-03-19 13:47:11,027: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2019-03-19 13:47:11,027: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2019-03-19 13:47:11,027: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2019-03-19 13:47:11,028: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2019-03-19 13:47:11,029: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+[2019-03-19 13:55:28,371: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2019-03-19 13:55:28,375: DEBUG/MainProcess] | Worker: Building graph...
+[2019-03-19 13:55:28,376: DEBUG/MainProcess] | Worker: New boot order: {Beat, Timer, Hub, Pool, Autoscaler, StateDB, Consumer}
+[2019-03-19 13:55:28,469: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2019-03-19 13:55:28,469: DEBUG/MainProcess] | Consumer: Building graph...
+[2019-03-19 13:55:28,619: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Heart, Mingle, Gossip, Tasks, Control, event loop}
+[2019-03-19 13:55:28,732: DEBUG/MainProcess] | Worker: Starting Hub
+[2019-03-19 13:55:28,732: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:28,733: DEBUG/MainProcess] | Worker: Starting Pool
+[2019-03-19 13:55:28,841: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:28,842: DEBUG/MainProcess] | Worker: Starting Consumer
+[2019-03-19 13:55:28,850: DEBUG/MainProcess] | Consumer: Starting Connection
+[2019-03-19 13:55:28,955: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2019-03-19 13:55:28,955: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:28,955: DEBUG/MainProcess] | Consumer: Starting Events
+[2019-03-19 13:55:29,063: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:29,063: DEBUG/MainProcess] | Consumer: Starting Heart
+[2019-03-19 13:55:29,074: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:29,074: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2019-03-19 13:55:29,074: INFO/MainProcess] mingle: searching for neighbors
+[2019-03-19 13:55:30,249: INFO/MainProcess] mingle: sync with 3 nodes
+[2019-03-19 13:55:30,252: DEBUG/MainProcess] mingle: processing reply from celery1@eva01
+[2019-03-19 13:55:30,252: DEBUG/MainProcess] mingle: processing reply from celery2@eva01
+[2019-03-19 13:55:30,252: DEBUG/MainProcess] mingle: processing reply from celery3@eva01
+[2019-03-19 13:55:30,252: INFO/MainProcess] mingle: sync complete
+[2019-03-19 13:55:30,252: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:30,252: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2019-03-19 13:55:30,263: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:30,263: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2019-03-19 13:55:30,302: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:30,302: DEBUG/MainProcess] | Consumer: Starting Control
+[2019-03-19 13:55:30,308: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 13:55:30,308: DEBUG/MainProcess] | Consumer: Starting event loop
+[2019-03-19 13:55:30,308: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2019-03-19 13:55:30,310: WARNING/MainProcess] /home/adminko/GRAMMER/venv/lib/python3.6/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-03-19 13:55:30,310: INFO/MainProcess] celery4@eva01 ready.
+[2019-03-19 13:55:30,314: DEBUG/MainProcess] basic.qos: prefetch_count->4
+[2019-03-19 13:55:30,387: DEBUG/MainProcess] pidbox received method hello(from_node='celery5@eva01', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'fa0d3b08-572d-30d2-90d8-b21868106027'} ticket:164c4301-bf38-4c6b-bd8c-9d3247418edf]
+[2019-03-19 13:55:30,387: INFO/MainProcess] sync with celery5@eva01
+[2019-03-19 13:55:30,424: DEBUG/MainProcess] celery1@eva01 joined the party
+[2019-03-19 13:55:30,886: DEBUG/MainProcess] celery3@eva01 joined the party
+[2019-03-19 13:55:31,689: DEBUG/MainProcess] celery2@eva01 joined the party
+[2019-03-19 13:55:32,208: DEBUG/MainProcess] celery5@eva01 joined the party
+[2019-03-19 13:55:33,800: DEBUG/MainProcess] pidbox received method heartbeat() [reply_to:None ticket:None]
+[2019-03-19 13:55:33,800: DEBUG/MainProcess] Heartbeat requested by remote.
+[2019-03-19 13:55:33,822: DEBUG/MainProcess] pidbox received method stats() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '296b78b8-bcb8-32b1-9aca-de5abdf94b9c'} ticket:acbb2566-694f-445a-98d2-b172a6079841]
+[2019-03-19 13:55:33,898: DEBUG/MainProcess] pidbox received method active_queues() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'a4146202-a9dc-32fe-95e6-c12f222694ef'} ticket:c0f3c3b7-1a43-45b6-b0ea-3d8eaa81b870]
+[2019-03-19 13:55:33,916: DEBUG/MainProcess] pidbox received method registered(taskinfoitems=[]) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'aed6642d-575d-316e-a6f9-da35325592f5'} ticket:3cb46ad9-6b20-4c3b-8e84-93087fcf3ab5]
+[2019-03-19 13:55:33,986: DEBUG/MainProcess] pidbox received method scheduled() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'a81613c9-d6ad-3b74-88a3-0d3ac875e6fd'} ticket:8f15a601-ab58-47b4-9cb8-cb68723db3ec]
+[2019-03-19 13:55:34,983: DEBUG/MainProcess] pidbox received method active() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '296b78b8-bcb8-32b1-9aca-de5abdf94b9c'} ticket:29b684ed-c62d-4425-98f3-6c95554504bd]
+[2019-03-19 13:55:35,014: DEBUG/MainProcess] pidbox received method reserved() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'a4146202-a9dc-32fe-95e6-c12f222694ef'} ticket:a903ab14-ff12-4254-8a95-7654bde18261]
+[2019-03-19 13:55:35,030: DEBUG/MainProcess] pidbox received method conf(with_defaults=False) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'a81613c9-d6ad-3b74-88a3-0d3ac875e6fd'} ticket:e2338448-013b-418b-af6d-1b9cc59769b8]
+[2019-03-19 13:55:35,307: DEBUG/MainProcess] pidbox received method revoked() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'aed6642d-575d-316e-a6f9-da35325592f5'} ticket:7786e2fb-ced1-4343-979a-d6be5d2b55d2]
+[2019-03-19 13:55:38,515: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:55:38,516: INFO/MainProcess] Events of group {task} enabled by remote.
+[2019-03-19 13:55:43,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:55:48,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:55:53,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:55:58,516: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:03,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:08,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:13,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:18,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:23,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:28,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:33,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:38,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:43,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:48,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:53,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:56:58,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:03,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:08,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:13,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:18,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:23,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:28,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:33,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:38,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:43,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:48,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:53,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:57:58,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:03,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:08,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:13,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:18,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:23,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:28,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:33,516: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:38,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:43,531: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:48,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:53,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:58:58,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:03,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:08,522: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:13,521: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:18,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:23,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:28,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:33,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:38,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:43,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:48,521: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:53,516: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 13:59:58,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:03,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:08,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:13,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:18,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:23,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:28,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:33,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:38,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:43,515: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:48,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:53,515: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:00:58,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:03,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:08,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:13,515: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:18,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:23,516: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:28,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:33,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:38,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:43,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:48,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:53,516: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:01:58,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:03,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:08,515: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:13,523: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:18,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:23,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:28,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:33,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:38,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:43,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:48,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:53,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:02:58,522: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:03,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:08,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:13,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:18,516: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:23,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:28,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:33,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:38,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:43,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:48,515: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:53,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:03:58,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:04:03,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:04:08,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:04:13,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:04:18,529: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:04:23,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:04:28,347: DEBUG/MainProcess] | Worker: Closing Hub...
+[2019-03-19 14:04:28,347: DEBUG/MainProcess] | Worker: Closing Pool...
+[2019-03-19 14:04:28,347: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2019-03-19 14:04:28,347: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2019-03-19 14:04:28,347: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2019-03-19 14:04:28,348: DEBUG/MainProcess] | Consumer: Closing Events...
+[2019-03-19 14:04:28,348: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2019-03-19 14:04:28,348: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2019-03-19 14:04:28,348: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2019-03-19 14:04:28,348: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2019-03-19 14:04:28,348: DEBUG/MainProcess] | Consumer: Closing Control...
+[2019-03-19 14:04:28,348: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2019-03-19 14:04:28,348: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2019-03-19 14:04:28,349: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2019-03-19 14:04:28,356: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2019-03-19 14:04:28,356: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 14:04:28,357: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2019-03-19 14:04:28,384: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2019-03-19 14:04:28,385: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2019-03-19 14:04:28,393: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2019-03-19 14:04:28,393: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2019-03-19 14:04:28,393: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2019-03-19 14:04:29,399: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2019-03-19 14:04:29,399: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2019-03-19 14:04:29,399: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2019-03-19 14:04:29,400: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 14:04:29,400: DEBUG/MainProcess] Closing consumer channel...
+[2019-03-19 14:04:29,400: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2019-03-19 14:04:29,400: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2019-03-19 14:04:29,400: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2019-03-19 14:04:29,401: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2019-03-19 14:04:29,402: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+[2019-03-19 14:04:55,445: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2019-03-19 14:04:55,456: DEBUG/MainProcess] | Worker: Building graph...
+[2019-03-19 14:04:55,457: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, StateDB, Beat, Consumer}
+[2019-03-19 14:04:55,566: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2019-03-19 14:04:55,568: DEBUG/MainProcess] | Consumer: Building graph...
+[2019-03-19 14:04:55,710: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Gossip, Agent, Tasks, Control, Heart, event loop}
+[2019-03-19 14:04:55,783: DEBUG/MainProcess] | Worker: Starting Hub
+[2019-03-19 14:04:55,784: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:55,784: DEBUG/MainProcess] | Worker: Starting Pool
+[2019-03-19 14:04:55,917: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:55,923: DEBUG/MainProcess] | Worker: Starting Consumer
+[2019-03-19 14:04:55,923: DEBUG/MainProcess] | Consumer: Starting Connection
+[2019-03-19 14:04:56,037: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2019-03-19 14:04:56,037: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:56,037: DEBUG/MainProcess] | Consumer: Starting Events
+[2019-03-19 14:04:56,116: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:56,116: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2019-03-19 14:04:56,116: INFO/MainProcess] mingle: searching for neighbors
+[2019-03-19 14:04:57,283: INFO/MainProcess] mingle: sync with 3 nodes
+[2019-03-19 14:04:57,285: DEBUG/MainProcess] mingle: processing reply from celery2@eva01
+[2019-03-19 14:04:57,285: DEBUG/MainProcess] mingle: processing reply from celery1@eva01
+[2019-03-19 14:04:57,285: DEBUG/MainProcess] mingle: processing reply from celery3@eva01
+[2019-03-19 14:04:57,286: INFO/MainProcess] mingle: sync complete
+[2019-03-19 14:04:57,286: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:57,290: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2019-03-19 14:04:57,293: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:57,294: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2019-03-19 14:04:57,317: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:57,317: DEBUG/MainProcess] | Consumer: Starting Control
+[2019-03-19 14:04:57,323: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:57,323: DEBUG/MainProcess] | Consumer: Starting Heart
+[2019-03-19 14:04:57,330: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:04:57,330: DEBUG/MainProcess] | Consumer: Starting event loop
+[2019-03-19 14:04:57,331: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2019-03-19 14:04:57,333: WARNING/MainProcess] /home/adminko/GRAMMER/venv/lib/python3.6/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-03-19 14:04:57,333: INFO/MainProcess] celery4@eva01 ready.
+[2019-03-19 14:04:57,333: DEBUG/MainProcess] basic.qos: prefetch_count->4
+[2019-03-19 14:04:57,360: DEBUG/MainProcess] pidbox received method hello(from_node='celery5@eva01', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'f3bb02ec-9b63-367f-aeff-dd240a06e9fd'} ticket:0d501a87-5df2-4ef9-9743-18f30e8983b1]
+[2019-03-19 14:04:57,361: INFO/MainProcess] sync with celery5@eva01
+[2019-03-19 14:04:57,380: DEBUG/MainProcess] celery1@eva01 joined the party
+[2019-03-19 14:04:58,522: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:04:58,522: INFO/MainProcess] Events of group {task} enabled by remote.
+[2019-03-19 14:04:58,572: DEBUG/MainProcess] celery2@eva01 joined the party
+[2019-03-19 14:04:58,623: DEBUG/MainProcess] celery5@eva01 joined the party
+[2019-03-19 14:04:59,222: DEBUG/MainProcess] celery3@eva01 joined the party
+[2019-03-19 14:05:03,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:05:08,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:05:13,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:05:18,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:05:23,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:05:28,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:05:31,720: DEBUG/MainProcess] | Worker: Closing Hub...
+[2019-03-19 14:05:31,720: DEBUG/MainProcess] | Worker: Closing Pool...
+[2019-03-19 14:05:31,720: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2019-03-19 14:05:31,720: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2019-03-19 14:05:31,720: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2019-03-19 14:05:31,721: DEBUG/MainProcess] | Consumer: Closing Events...
+[2019-03-19 14:05:31,721: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2019-03-19 14:05:31,721: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2019-03-19 14:05:31,721: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2019-03-19 14:05:31,721: DEBUG/MainProcess] | Consumer: Closing Control...
+[2019-03-19 14:05:31,721: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2019-03-19 14:05:31,721: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2019-03-19 14:05:31,721: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2019-03-19 14:05:31,722: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2019-03-19 14:05:31,728: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2019-03-19 14:05:31,756: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2019-03-19 14:05:31,756: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 14:05:31,756: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2019-03-19 14:05:31,770: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2019-03-19 14:05:31,770: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2019-03-19 14:05:31,770: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2019-03-19 14:05:31,770: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2019-03-19 14:05:32,776: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2019-03-19 14:05:32,776: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2019-03-19 14:05:32,776: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2019-03-19 14:05:32,776: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2019-03-19 14:05:32,776: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 14:05:32,777: DEBUG/MainProcess] Closing consumer channel...
+[2019-03-19 14:05:32,777: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2019-03-19 14:05:32,777: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2019-03-19 14:05:32,801: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2019-03-19 14:05:32,813: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+[2019-03-19 14:06:26,638: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2019-03-19 14:06:26,645: DEBUG/MainProcess] | Worker: Building graph...
+[2019-03-19 14:06:26,645: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2019-03-19 14:06:26,744: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2019-03-19 14:06:26,745: DEBUG/MainProcess] | Consumer: Building graph...
+[2019-03-19 14:06:26,887: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Tasks, Control, Gossip, Agent, event loop}
+[2019-03-19 14:06:26,976: DEBUG/MainProcess] | Worker: Starting Hub
+[2019-03-19 14:06:26,977: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:26,977: DEBUG/MainProcess] | Worker: Starting Pool
+[2019-03-19 14:06:27,118: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:27,119: DEBUG/MainProcess] | Worker: Starting Consumer
+[2019-03-19 14:06:27,120: DEBUG/MainProcess] | Consumer: Starting Connection
+[2019-03-19 14:06:27,220: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2019-03-19 14:06:27,220: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:27,220: DEBUG/MainProcess] | Consumer: Starting Events
+[2019-03-19 14:06:27,435: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:27,436: DEBUG/MainProcess] | Consumer: Starting Heart
+[2019-03-19 14:06:27,463: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:27,464: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2019-03-19 14:06:27,465: INFO/MainProcess] mingle: searching for neighbors
+[2019-03-19 14:06:28,763: INFO/MainProcess] mingle: sync with 3 nodes
+[2019-03-19 14:06:28,765: DEBUG/MainProcess] mingle: processing reply from celery1@eva01
+[2019-03-19 14:06:28,765: DEBUG/MainProcess] mingle: processing reply from celery3@eva01
+[2019-03-19 14:06:28,765: DEBUG/MainProcess] mingle: processing reply from celery2@eva01
+[2019-03-19 14:06:28,765: INFO/MainProcess] mingle: sync complete
+[2019-03-19 14:06:28,766: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:28,766: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2019-03-19 14:06:28,795: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:28,795: DEBUG/MainProcess] | Consumer: Starting Control
+[2019-03-19 14:06:28,803: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:28,803: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2019-03-19 14:06:28,806: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:06:28,806: DEBUG/MainProcess] | Consumer: Starting event loop
+[2019-03-19 14:06:28,806: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2019-03-19 14:06:28,808: WARNING/MainProcess] /home/adminko/GRAMMER/venv/lib/python3.6/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-03-19 14:06:28,808: INFO/MainProcess] celery4@eva01 ready.
+[2019-03-19 14:06:28,808: DEBUG/MainProcess] basic.qos: prefetch_count->4
+[2019-03-19 14:06:29,121: DEBUG/MainProcess] celery5@eva01 joined the party
+[2019-03-19 14:06:29,192: DEBUG/MainProcess] pidbox received method hello(from_node='celery5@eva01', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '37c5c1ff-fd08-39b2-88aa-fb8a4c82a2ff'} ticket:935e9b6d-4108-402b-9cd2-eb48fa98a793]
+[2019-03-19 14:06:29,192: INFO/MainProcess] sync with celery5@eva01
+[2019-03-19 14:06:29,784: DEBUG/MainProcess] celery2@eva01 joined the party
+[2019-03-19 14:06:30,240: DEBUG/MainProcess] celery3@eva01 joined the party
+[2019-03-19 14:06:30,417: DEBUG/MainProcess] celery1@eva01 joined the party
+[2019-03-19 14:06:33,522: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:06:33,522: INFO/MainProcess] Events of group {task} enabled by remote.
+[2019-03-19 14:06:38,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:06:43,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:06:48,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:06:53,522: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:06:58,516: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:07:03,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:07:08,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:07:08,586: DEBUG/MainProcess] | Worker: Closing Hub...
+[2019-03-19 14:07:08,586: DEBUG/MainProcess] | Worker: Closing Pool...
+[2019-03-19 14:07:08,590: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2019-03-19 14:07:08,590: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2019-03-19 14:07:08,603: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2019-03-19 14:07:08,603: DEBUG/MainProcess] | Consumer: Closing Events...
+[2019-03-19 14:07:08,603: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2019-03-19 14:07:08,604: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2019-03-19 14:07:08,604: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2019-03-19 14:07:08,604: DEBUG/MainProcess] | Consumer: Closing Control...
+[2019-03-19 14:07:08,604: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2019-03-19 14:07:08,604: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2019-03-19 14:07:08,604: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2019-03-19 14:07:08,604: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2019-03-19 14:07:08,633: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2019-03-19 14:07:08,645: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2019-03-19 14:07:08,645: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 14:07:08,645: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2019-03-19 14:07:08,645: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2019-03-19 14:07:08,649: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2019-03-19 14:07:08,649: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2019-03-19 14:07:08,649: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2019-03-19 14:07:09,674: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2019-03-19 14:07:09,674: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2019-03-19 14:07:09,675: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2019-03-19 14:07:09,675: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2019-03-19 14:07:09,675: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 14:07:09,675: DEBUG/MainProcess] Closing consumer channel...
+[2019-03-19 14:07:09,675: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2019-03-19 14:07:09,675: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2019-03-19 14:07:09,676: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2019-03-19 14:07:09,677: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+[2019-03-19 14:16:19,007: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2019-03-19 14:16:19,018: DEBUG/MainProcess] | Worker: Building graph...
+[2019-03-19 14:16:19,019: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, StateDB, Beat, Consumer}
+[2019-03-19 14:16:19,123: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2019-03-19 14:16:19,124: DEBUG/MainProcess] | Consumer: Building graph...
+[2019-03-19 14:16:19,268: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Gossip, Heart, Tasks, Control, event loop}
+[2019-03-19 14:16:19,381: DEBUG/MainProcess] | Worker: Starting Hub
+[2019-03-19 14:16:19,381: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:19,381: DEBUG/MainProcess] | Worker: Starting Pool
+[2019-03-19 14:16:19,544: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:19,545: DEBUG/MainProcess] | Worker: Starting Consumer
+[2019-03-19 14:16:19,545: DEBUG/MainProcess] | Consumer: Starting Connection
+[2019-03-19 14:16:19,714: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2019-03-19 14:16:19,715: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:19,715: DEBUG/MainProcess] | Consumer: Starting Events
+[2019-03-19 14:16:19,780: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:19,780: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2019-03-19 14:16:19,780: INFO/MainProcess] mingle: searching for neighbors
+[2019-03-19 14:16:20,994: INFO/MainProcess] mingle: sync with 3 nodes
+[2019-03-19 14:16:20,996: DEBUG/MainProcess] mingle: processing reply from celery2@eva01
+[2019-03-19 14:16:20,997: DEBUG/MainProcess] mingle: processing reply from celery1@eva01
+[2019-03-19 14:16:20,997: DEBUG/MainProcess] mingle: processing reply from celery3@eva01
+[2019-03-19 14:16:20,998: INFO/MainProcess] mingle: sync complete
+[2019-03-19 14:16:20,998: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:21,002: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2019-03-19 14:16:21,018: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:21,019: DEBUG/MainProcess] | Consumer: Starting Heart
+[2019-03-19 14:16:21,027: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:21,028: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2019-03-19 14:16:21,072: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:21,072: DEBUG/MainProcess] | Consumer: Starting Control
+[2019-03-19 14:16:21,078: DEBUG/MainProcess] ^-- substep ok
+[2019-03-19 14:16:21,078: DEBUG/MainProcess] | Consumer: Starting event loop
+[2019-03-19 14:16:21,079: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2019-03-19 14:16:21,082: WARNING/MainProcess] /home/adminko/GRAMMER/venv/lib/python3.6/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-03-19 14:16:21,094: INFO/MainProcess] celery4@eva01 ready.
+[2019-03-19 14:16:21,094: DEBUG/MainProcess] basic.qos: prefetch_count->4
+[2019-03-19 14:16:21,301: DEBUG/MainProcess] pidbox received method hello(from_node='celery5@eva01', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '586c57a3-d78a-39db-b979-121e9c62550a'} ticket:1d11645a-71bc-4fce-8b6c-9a47b4b3553b]
+[2019-03-19 14:16:21,304: INFO/MainProcess] sync with celery5@eva01
+[2019-03-19 14:16:21,700: DEBUG/MainProcess] celery2@eva01 joined the party
+[2019-03-19 14:16:22,248: DEBUG/MainProcess] celery1@eva01 joined the party
+[2019-03-19 14:16:22,345: DEBUG/MainProcess] celery5@eva01 joined the party
+[2019-03-19 14:16:22,767: DEBUG/MainProcess] celery3@eva01 joined the party
+[2019-03-19 14:16:23,517: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:16:23,517: INFO/MainProcess] Events of group {task} enabled by remote.
+[2019-03-19 14:16:28,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:16:33,519: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:16:38,516: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:16:43,527: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:16:48,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:16:53,518: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:16:58,520: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2019-03-19 14:16:58,839: DEBUG/MainProcess] | Worker: Closing Hub...
+[2019-03-19 14:16:58,840: DEBUG/MainProcess] | Worker: Closing Pool...
+[2019-03-19 14:16:58,840: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2019-03-19 14:16:58,840: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2019-03-19 14:16:58,840: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2019-03-19 14:16:58,840: DEBUG/MainProcess] | Consumer: Closing Events...
+[2019-03-19 14:16:58,840: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2019-03-19 14:16:58,841: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2019-03-19 14:16:58,841: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2019-03-19 14:16:58,841: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2019-03-19 14:16:58,841: DEBUG/MainProcess] | Consumer: Closing Control...
+[2019-03-19 14:16:58,841: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2019-03-19 14:16:58,841: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2019-03-19 14:16:58,841: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2019-03-19 14:16:58,857: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2019-03-19 14:16:58,857: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 14:16:58,858: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2019-03-19 14:16:58,879: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2019-03-19 14:16:58,890: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2019-03-19 14:16:58,890: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2019-03-19 14:16:58,890: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2019-03-19 14:16:58,891: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2019-03-19 14:16:59,897: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2019-03-19 14:16:59,897: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2019-03-19 14:16:59,897: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2019-03-19 14:16:59,897: DEBUG/MainProcess] Canceling task consumer...
+[2019-03-19 14:16:59,897: DEBUG/MainProcess] Closing consumer channel...
+[2019-03-19 14:16:59,898: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2019-03-19 14:16:59,898: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2019-03-19 14:16:59,904: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2019-03-19 14:16:59,905: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2019-03-19 14:16:59,926: DEBUG/MainProcess] removing tasks from inqueue until task handler finished

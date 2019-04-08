@@ -1,0 +1,3 @@
+[2019-03-19 13:43:13,990: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_like[137e5881-8355-4f79-9904-91de76c855af] succeeded in 0.08902515796944499s: 'Запущено 0 заданий'
+[2019-03-19 13:45:08,951: WARNING/ForkPoolWorker-1] запускаем процесс фолловинга на пользовател Selentaori.art (ID задания 35)
+[2019-03-19 13:45:14,076: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_add_follow[833368da-4dc3-42a4-a09a-f9a0d18d2679] succeeded in 5.159991639084183s: 'Запущено 1 заданий'

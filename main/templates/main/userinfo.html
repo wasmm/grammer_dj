@@ -1,0 +1,65 @@
+{% extends 'main/base.html'  %}
+
+
+
+{% block udata %}
+
+{{ username }}<br>
+Кол-во подписчиков: {{ count_followers }}<br>
+Кол-во подписок: {{ count_following }}<br>
+
+<br>
+Статистика за день:<br>
+Количество лайков: {{ likes }}<br>
+Количество подписок: {{ follow }}<br>
+Количество удалившихся: {{ unfollow }}<br>
+Количество непролайканых: {{ like_it }}<br>
+Количество необработанных фолловеров {{ pot_follow }}<br>
+<br>
+
+  Масс лайк:<b>
+{% if m_likes == True %}
+ Вкл
+{% elif m_likes == False %}
+  Выкл
+{% endif %}</b><br><br>
+
+Масс фолловинг по аккаунту:<b>
+{% if m_follow_acc == True %}
+ Вкл
+{% elif m_follow_acc == False %}
+  Выкл
+{% endif %}</b><br>
+
+Масс фолловинг по гео:<b>
+{% if m_follow_geo == True %}
+ Вкл
+{% elif m_follow_geo == False %}
+  Выкл
+{% endif %}</b><br>
+
+Масс фолловинг по тегу:<b>
+{% if m_follow_tag == True %}
+ Вкл
+{% elif m_follow_tag == False %}
+  Выкл
+{% endif %}</b><br>
+
+
+
+<br>
+Добавить задание на масс фолловинг<br><br>
+
+<form  method="post">
+  {% csrf_token %}
+  {% for field in form %}
+    {{ field.label }}<br>
+    {{ field }}<br>
+  {% endfor %}
+  <br>
+  <input type="submit" value="Добавить">
+</form>
+
+
+
+{% endblock %}

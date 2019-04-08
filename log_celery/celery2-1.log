@@ -1,0 +1,51 @@
+[2019-03-19 13:42:58,992: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[b5a3549a-f3fd-45a7-b9ac-143bb0ff4299] succeeded in 0.04134285310283303s: 'Запущено 0 заданий'
+[2019-03-19 13:43:09,074: WARNING/ForkPoolWorker-1] задание есть
+[2019-03-19 13:43:09,101: DEBUG/ForkPoolWorker-1] USERAGENT: Instagram 26.0.0.10.86 Android (24/7.0; 640dpi; 1440x2560; samsung; SM-G930F; herolte; samsungexynos8890; en_US)
+[2019-03-19 13:43:09,112: WARNING/ForkPoolWorker-1] Потенциальный фолловер: serdgik_lo_ol
+[2019-03-19 13:43:09,115: DEBUG/ForkPoolWorker-1] REQUEST: https://i.instagram.com/api/v1/friendships/create/8466259855/ POST
+[2019-03-19 13:43:09,115: DEBUG/ForkPoolWorker-1] DATA: b'ig_sig_key_version=4&signed_body=e146f2cf06200f5db2357fcd67c1401fd6179d72e69278e69c500522ec31a4e6.%7B%22user_id%22%3A%228466259855%22%2C%22radio_type%22%3A%22wifi-none%22%2C%22_csrftoken%22%3A%22QG1JM8eGdMiz6rH6cDSKErSATWZtRZTS%22%2C%22_uuid%22%3A%224cc9c3bc-355d-11e9-b844-080027375973%22%2C%22_uid%22%3A%229221983535%22%7D'
+[2019-03-19 13:43:10,005: DEBUG/ForkPoolWorker-1] RESPONSE: 200 {"friendship_status": {"following": true, "followed_by": true, "blocking": false, "muting": false, "is_private": false, "incoming_request": false, "outgoing_request": false, "is_bestie": false}, "status": "ok"}
+[2019-03-19 13:43:10,005: WARNING/ForkPoolWorker-1] Фолловер добавлен
+[2019-03-19 13:43:10,012: WARNING/ForkPoolWorker-1] Запись удалена из Acc_in_act
+[2019-03-19 13:43:10,013: WARNING/ForkPoolWorker-1] Завершение ф-ции фолловинга
+[2019-03-19 13:43:14,055: INFO/ForkPoolWorker-1] Task main.tasks.follow_it[3a74daaa-be8e-40b6-a394-d93b761fa6ae] succeeded in 5.00441596203018s: 'Фолловинг совершен'
+[2019-03-19 13:43:48,942: WARNING/ForkPoolWorker-1] задание есть
+[2019-03-19 13:43:48,957: DEBUG/ForkPoolWorker-1] USERAGENT: Instagram 26.0.0.10.86 Android (24/7.0; 640dpi; 1440x2560; samsung; SM-G930F; herolte; samsungexynos8890; en_US)
+[2019-03-19 13:43:48,963: WARNING/ForkPoolWorker-1] Потенциальный фолловер: tensina86
+[2019-03-19 13:43:48,964: DEBUG/ForkPoolWorker-1] REQUEST: https://i.instagram.com/api/v1/friendships/create/4616292921/ POST
+[2019-03-19 13:43:48,964: DEBUG/ForkPoolWorker-1] DATA: b'ig_sig_key_version=4&signed_body=e709c7f98aaca4cde3a49cb131f0080ed76c2e2e80ac6555f3a07230a6f15063.%7B%22user_id%22%3A%224616292921%22%2C%22radio_type%22%3A%22wifi-none%22%2C%22_csrftoken%22%3A%22QG1JM8eGdMiz6rH6cDSKErSATWZtRZTS%22%2C%22_uuid%22%3A%224cc9c3bc-355d-11e9-b844-080027375973%22%2C%22_uid%22%3A%229221983535%22%7D'
+[2019-03-19 13:43:49,906: DEBUG/ForkPoolWorker-1] RESPONSE: 200 {"friendship_status": {"following": true, "followed_by": false, "blocking": false, "muting": false, "is_private": false, "incoming_request": false, "outgoing_request": false, "is_bestie": false}, "status": "ok"}
+[2019-03-19 13:43:49,906: WARNING/ForkPoolWorker-1] Фолловер добавлен
+[2019-03-19 13:43:49,914: WARNING/ForkPoolWorker-1] Запись удалена из Acc_in_act
+[2019-03-19 13:43:49,914: WARNING/ForkPoolWorker-1] Завершение ф-ции фолловинга
+[2019-03-19 13:43:53,960: INFO/ForkPoolWorker-1] Task main.tasks.follow_it[43423a14-ad50-437e-a75c-4319211cceda] succeeded in 5.040270714089274s: 'Фолловинг совершен'
+[2019-03-19 13:43:58,968: WARNING/ForkPoolWorker-1] запускаем процесс лайка на пользовател kabluchki_shop (ID задания 540)
+[2019-03-19 13:44:01,071: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_like[7ff78c1b-a6f7-426a-8e53-9ef65080826c] succeeded in 2.1559266140684485s: 'Запущено 1 заданий'
+[2019-03-19 13:44:28,974: WARNING/ForkPoolWorker-1] запускаем процесс фолловинга на пользовател Selentaori.art (ID задания 35)
+[2019-03-19 13:44:32,987: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_add_follow[f2b1c15f-746c-4a0d-8907-033715181d6f] succeeded in 4.063093647942878s: 'Запущено 1 заданий'
+[2019-03-19 13:45:09,084: WARNING/ForkPoolWorker-1] задание есть
+[2019-03-19 13:45:09,100: DEBUG/ForkPoolWorker-1] USERAGENT: Instagram 26.0.0.10.86 Android (24/7.0; 640dpi; 1440x2560; samsung; SM-G930F; herolte; samsungexynos8890; en_US)
+[2019-03-19 13:45:09,106: WARNING/ForkPoolWorker-1] Потенциальный фолловер: tanuasoboleva
+[2019-03-19 13:45:09,107: DEBUG/ForkPoolWorker-1] REQUEST: https://i.instagram.com/api/v1/friendships/create/1515954164/ POST
+[2019-03-19 13:45:09,107: DEBUG/ForkPoolWorker-1] DATA: b'ig_sig_key_version=4&signed_body=877ce32bccaca682ff1f03c25a853b07314b00f70c83a562547ff550aa238950.%7B%22user_id%22%3A%221515954164%22%2C%22radio_type%22%3A%22wifi-none%22%2C%22_csrftoken%22%3A%22QG1JM8eGdMiz6rH6cDSKErSATWZtRZTS%22%2C%22_uuid%22%3A%224cc9c3bc-355d-11e9-b844-080027375973%22%2C%22_uid%22%3A%229221983535%22%7D'
+[2019-03-19 13:45:09,827: DEBUG/ForkPoolWorker-1] RESPONSE: 200 {"friendship_status": {"following": true, "followed_by": false, "blocking": false, "muting": false, "is_private": false, "incoming_request": false, "outgoing_request": false, "is_bestie": false}, "status": "ok"}
+[2019-03-19 13:45:09,827: WARNING/ForkPoolWorker-1] Фолловер добавлен
+[2019-03-19 13:45:09,834: WARNING/ForkPoolWorker-1] Запись удалена из Acc_in_act
+[2019-03-19 13:45:09,834: WARNING/ForkPoolWorker-1] Завершение ф-ции фолловинга
+[2019-03-19 13:45:16,887: INFO/ForkPoolWorker-1] Task main.tasks.follow_it[bcf8b00b-27e1-4bb5-86b0-819d07589529] succeeded in 7.824526500073262s: 'Фолловинг совершен'
+[2019-03-19 13:45:28,955: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[15dc80d1-aeaf-4d4e-a3dd-8961b5f60426] succeeded in 0.03431163204368204s: 'Запущено 0 заданий'
+[2019-03-19 13:45:48,982: WARNING/ForkPoolWorker-1] задание есть
+[2019-03-19 13:45:49,003: DEBUG/ForkPoolWorker-1] USERAGENT: Instagram 26.0.0.10.86 Android (24/7.0; 640dpi; 1440x2560; samsung; SM-G930F; herolte; samsungexynos8890; en_US)
+[2019-03-19 13:45:49,014: WARNING/ForkPoolWorker-1] Потенциальный фолловер: _dream_girl_15_
+[2019-03-19 13:45:49,015: DEBUG/ForkPoolWorker-1] REQUEST: https://i.instagram.com/api/v1/friendships/create/6060530039/ POST
+[2019-03-19 13:45:49,016: DEBUG/ForkPoolWorker-1] DATA: b'ig_sig_key_version=4&signed_body=735128a2ad4a9aba266edaa18da4a0e640eb3caea6aaf2f2ad059f8d91829a28.%7B%22user_id%22%3A%226060530039%22%2C%22radio_type%22%3A%22wifi-none%22%2C%22_csrftoken%22%3A%22QG1JM8eGdMiz6rH6cDSKErSATWZtRZTS%22%2C%22_uuid%22%3A%224cc9c3bc-355d-11e9-b844-080027375973%22%2C%22_uid%22%3A%229221983535%22%7D'
+[2019-03-19 13:45:49,637: DEBUG/ForkPoolWorker-1] RESPONSE: 200 {"friendship_status": {"following": true, "followed_by": false, "blocking": false, "muting": false, "is_private": true, "incoming_request": false, "outgoing_request": false, "is_bestie": false}, "status": "ok"}
+[2019-03-19 13:45:49,637: WARNING/ForkPoolWorker-1] Фолловер добавлен
+[2019-03-19 13:45:49,645: WARNING/ForkPoolWorker-1] Запись удалена из Acc_in_act
+[2019-03-19 13:45:49,646: WARNING/ForkPoolWorker-1] Завершение ф-ции фолловинга
+[2019-03-19 13:45:55,694: INFO/ForkPoolWorker-1] Task main.tasks.follow_it[b3550260-8baa-4a29-9124-9c22dcc16bb9] succeeded in 6.735428428975865s: 'Фолловинг совершен'
+[2019-03-19 13:45:58,960: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[f4fe5c6f-f0b1-4d7a-afe1-c356181f29ef] succeeded in 0.023547425982542336s: 'Запущено 0 заданий'
+[2019-03-19 13:46:13,956: WARNING/ForkPoolWorker-1] запускаем процесс лайка на пользовател kabluchki_shop (ID задания 540)
+[2019-03-19 13:46:17,978: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_like[3a194ef5-54f9-4459-8406-530c5613f0b1] succeeded in 4.049835285986774s: 'Запущено 1 заданий'
+[2019-03-19 13:46:28,990: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[1e9b1a6a-d3e5-4efd-bf04-9722ef016bc7] succeeded in 0.04318538401275873s: 'Запущено 0 заданий'
+[2019-03-19 13:46:59,011: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[3bc53114-8f7f-4557-94f6-3a22a57520c4] succeeded in 0.04543268389534205s: 'Запущено 0 заданий'

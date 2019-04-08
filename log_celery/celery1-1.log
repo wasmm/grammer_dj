@@ -1,0 +1,27 @@
+[2019-03-19 13:43:08,939: WARNING/ForkPoolWorker-1] запускаем процесс фолловинга на пользовател Selentaori.art (ID задания 35)
+[2019-03-19 13:43:13,062: WARNING/ForkPoolWorker-1] запускаем процесс фолловинга на пользовател kabluchki_shop (ID задания 34)
+[2019-03-19 13:43:15,074: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_add_follow[9c81cfe1-ad6c-4514-bb16-074721502c69] succeeded in 6.1905641379999s: 'Запущено 2 заданий'
+[2019-03-19 13:43:15,113: WARNING/ForkPoolWorker-1] задание есть
+[2019-03-19 13:43:15,144: DEBUG/ForkPoolWorker-1] USERAGENT: Instagram 26.0.0.10.86 Android (24/7.0; 640dpi; 1440x2560; samsung; SM-G930F; herolte; samsungexynos8890; en_US)
+[2019-03-19 13:43:15,158: WARNING/ForkPoolWorker-1] Потенциальный фолловер: whyu769
+[2019-03-19 13:43:15,161: DEBUG/ForkPoolWorker-1] REQUEST: https://i.instagram.com/api/v1/friendships/create/8606486586/ POST
+[2019-03-19 13:43:15,161: DEBUG/ForkPoolWorker-1] DATA: b'ig_sig_key_version=4&signed_body=8246e63334fb6dc9e7216c3055fbdc2c6151c866f16605a49b39436f267f396b.%7B%22user_id%22%3A%228606486586%22%2C%22radio_type%22%3A%22wifi-none%22%2C%22_csrftoken%22%3A%22DA0GRRh45SZdGFGSTSMZdv6g78OtWEjQ%22%2C%22_uuid%22%3A%225e8dab26-322f-11e9-99d7-080027375973%22%2C%22_uid%22%3A%228315686136%22%7D'
+[2019-03-19 13:43:16,520: DEBUG/ForkPoolWorker-1] RESPONSE: 200 {"friendship_status": {"following": true, "followed_by": false, "blocking": false, "muting": false, "is_private": false, "incoming_request": false, "outgoing_request": false, "is_bestie": false}, "status": "ok"}
+[2019-03-19 13:43:16,521: WARNING/ForkPoolWorker-1] Фолловер добавлен
+[2019-03-19 13:43:16,541: WARNING/ForkPoolWorker-1] Запись удалена из Acc_in_act
+[2019-03-19 13:43:16,541: WARNING/ForkPoolWorker-1] Завершение ф-ции фолловинга
+[2019-03-19 13:43:24,564: INFO/ForkPoolWorker-1] Task main.tasks.follow_it[ef82a167-d61b-455d-9b0d-2f3c29c9db75] succeeded in 9.481792091042735s: 'Фолловинг совершен'
+[2019-03-19 13:43:28,933: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[e9a88361-5645-4316-a4ab-f1daf33a606c] succeeded in 0.03778321004938334s: 'Запущено 0 заданий'
+[2019-03-19 13:43:48,914: WARNING/ForkPoolWorker-1] запускаем процесс фолловинга на пользовател Selentaori.art (ID задания 35)
+[2019-03-19 13:43:50,930: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_add_follow[1f47f446-7da6-4990-8079-300453dafd19] succeeded in 2.0456304830731824s: 'Запущено 1 заданий'
+[2019-03-19 13:43:58,954: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[e265bcaf-c2d7-4648-b256-14135760a28c] succeeded in 0.04533876897767186s: 'Запущено 0 заданий'
+[2019-03-19 13:44:28,977: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[d7b3be82-213f-4249-a0c5-7bbe03fabf15] succeeded in 0.06631775107234716s: 'Запущено 0 заданий'
+[2019-03-19 13:44:58,955: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_follow[63ccf615-4330-46de-9023-ee280810b459] succeeded in 0.041437902953475714s: 'Запущено 0 заданий'
+[2019-03-19 13:45:28,996: WARNING/ForkPoolWorker-1] запускаем процесс лайка на пользовател kabluchki_shop (ID задания 540)
+[2019-03-19 13:45:34,019: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_like[e1c3333c-68cc-4fab-8be2-25e453b430f9] succeeded in 5.0562536080833524s: 'Запущено 1 заданий'
+[2019-03-19 13:45:48,953: WARNING/ForkPoolWorker-1] запускаем процесс фолловинга на пользовател Selentaori.art (ID задания 35)
+[2019-03-19 13:45:52,972: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_add_follow[d936e231-37b2-428a-a1f0-23cd10a51500] succeeded in 4.048198792035691s: 'Запущено 1 заданий'
+[2019-03-19 13:46:29,008: WARNING/ForkPoolWorker-1] запускаем процесс фолловинга на пользовател Selentaori.art (ID задания 35)
+[2019-03-19 13:46:34,030: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_add_follow[d9bcd740-4bae-4d17-b2d3-31a9216bc6a6] succeeded in 5.07562275393866s: 'Запущено 1 заданий'
+[2019-03-19 13:46:59,003: WARNING/ForkPoolWorker-1] запускаем процесс лайка на пользовател kabluchki_shop (ID задания 540)
+[2019-03-19 13:47:04,043: INFO/ForkPoolWorker-1] Task main.tasks.scaner_acts_like[a483a95a-0080-4150-8118-150f555f472b] succeeded in 5.0959496550494805s: 'Запущено 1 заданий'

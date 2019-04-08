@@ -1,0 +1,24 @@
+{% extends 'main/base.html'  %}
+
+
+
+{% block udata %}
+
+
+
+  {% for login in data %}
+
+
+  <a href={{ login.get_absolute_url }}>  {{ login.login }}</a><br>
+
+    {% endfor %}
+
+    <br>
+
+    
+
+
+
+
+    <br>
+{% endblock %}
